@@ -6,20 +6,20 @@ class Trans < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-darwin-amd64.tar.gz"
-      sha256 "89f911ea5afbd39fe7c60c1d03ca65ca89e3571334fed281faa84ae8a16c9577"
+      sha256 "f4007b06b56e17591f2ec882d648de02bb54afbf6822c42eedaf59a0b4265fb1"
     else
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-darwin-arm64.tar.gz"
-      sha256 "b1ce58ab06197aa65e18b77c106b3a6cfcafa32068c797832a3b9edd528f45ee"
+      sha256 "b009ff97db3f8d41968c8e0668eeba1ce9a38cd5f3b28989cde252a072a5501d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-linux-amd64.tar.gz"
-      sha256 "03fece6c41e6c53c5db3849086a193d307a207d9ae034af30399900b46b5864b"
+      sha256 "09f4bef94c36aac0d3912ce3c37145e2016e42ada3ddfe6f1bf5de5a248d7c3d"
     else
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-linux-arm64.tar.gz"
-      sha256 "fa69381e0a87919be92a5d8778b932e2da9ea698021c5c406d9ef19119ba9202"
+      sha256 "4db5d490b3cce555ec4d8a0effca97ee2c2fb651c6487978e8e9bea1afe05efa"
     end
   end
 
