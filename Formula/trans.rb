@@ -1,25 +1,25 @@
 class Trans < Formula
   desc "Terminal AI translation tool powered by OpenAI"
   homepage "https://github.com/lian-yang/trans"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-darwin-amd64.tar.gz"
-      sha256 "701f7a89d304b300f56b1b2556d742dd520dd8876a3c319feba14fd7ff291d52"
+      sha256 "8a12448048219e94fb015eb6ba68430e9990d3571b3d7993659a28d25c56b4cd"
     else
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-darwin-arm64.tar.gz"
-      sha256 "e97d670b5a9c8efa43ba7c355dfe1c799a0f90cfc828c927739b3083ab5555df"
+      sha256 "63eb9912b065062ecbb209691359d8eee63ff982e9817fadc166440ac3d691ef"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-linux-amd64.tar.gz"
-      sha256 "3d524d5d459a182bac87c3431c53e121572f504c881620d84557d5b7ec3c29af"
+      sha256 "2461ecfdfa5f15cf9f9eaa893d1ab3b6f0bd3633d170f483130affa2c0551e69"
     else
       url "https://github.com/lian-yang/trans/releases/download/v#{version}/trans-linux-arm64.tar.gz"
-      sha256 "bf3fe41e23db662c99c01e4594aaa0c11f0139ebcdbb0cd1aa90df8dff23bbf8"
+      sha256 "eb8ea7c21c44b89f63facf5fb5fd151a0d92bf5e5940852f59268641cd81a4f6"
     end
   end
 
